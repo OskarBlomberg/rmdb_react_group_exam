@@ -1,3 +1,4 @@
+@import url("./pages/Homepage/homepage.css");
 @import url("components/MovieGrid/moviegrid.css");
 
 *{
@@ -6,6 +7,19 @@
   box-sizing: border-box;
 }
 
-html {
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 6rem;
+  width: 100vw;
   background-color: black;
+}
+
+.loadingText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: clamp(2rem, 8vw, 5rem);
+  text-align: center;
 }
