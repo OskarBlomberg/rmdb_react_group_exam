@@ -1,6 +1,23 @@
+@import url("./pages/Homepage/homepage.css");
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 6rem;
+  width: 100vw;
+}
+
+.loadingText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: clamp(2rem, 8vw, 5rem);
+  text-align: center;
+}
