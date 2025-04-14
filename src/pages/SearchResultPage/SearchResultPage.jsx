@@ -1,22 +1,22 @@
 import React from "react";
-import "./searchResultPage.css";
+import { useSearchParams } from "react-router-dom";
+import { useFetch } from "../../hooks/useFetch";
+import MovieGrid from "../../components/MovieGrid/MovieGrid";
 
-function MovieSearchList({ movies }) {
-  if (!movies || movies.length === 0) {
-    return <p className="loadingText">Could not find any movies</p>;
-  }
+function SearchResultPage() {
+  const [searchParams] = useSearchParams();
+  const query = searchParams.get("q");
+  const { data: movies, loading: moviesLoading } = useFetch(
+    "https://santosnr6.github.io/Data/favoritemovies.json"
+  );
+
+  if (moviesLoading) return <h1 className="loadingText">Loading...</h1>;
 
   return (
-    <section>
-      <MovieGrid />
-      {/* {movies.map((movie) => (
-            <section key={movie.imdbID}>
-                <h2>{movie.Title}</h2>
-                <img src={movie.Poster} alt={movie.Title} width="150" />
-            </section>
-        ))} */}
-    </section>
+    <main className="searchresultpage">
+      <MovieGrid movies={movies} />
+    </main>
   );
 }
 
-export default MovieSearchList;
+export default SearchResultPage;

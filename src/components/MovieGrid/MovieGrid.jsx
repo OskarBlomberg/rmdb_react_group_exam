@@ -4,7 +4,7 @@ function MovieGrid({ movies }) {
   return (
     <section className="movieGrid">
       {movies.map((movie) => (
-        <MovieCard key={movie.id} movie={movie} />
+        <MovieCard key={movie.imdbID} movie={movie} />
       ))}
     </section>
   );
