@@ -6,7 +6,6 @@ function App() {
   return (
     <section className="app">
       <Header />
-      <h1>StartPage</h1>
     </section>
   );
 
