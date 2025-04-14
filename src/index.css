@@ -1,4 +1,5 @@
 @import url("./pages/Homepage/homepage.css");
+@import url("components/MovieGrid/moviegrid.css");
 
 *{
   margin: 0;
