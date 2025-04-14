@@ -12,6 +12,7 @@ main {
   flex-direction: column;
   padding: 4rem 6rem;
   width: 100vw;
+  background-color: black;
 }
 
 .loadingText {
