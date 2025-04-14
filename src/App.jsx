@@ -1,9 +1,4 @@
-
-import './App.css'
-
 function App() {
-  
-
   return (
    <section className='app'>
       <h1>StartPage</h1>
