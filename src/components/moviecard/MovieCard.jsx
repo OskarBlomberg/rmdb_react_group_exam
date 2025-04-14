@@ -1,7 +1,7 @@
 import './moviecard.css';
 //import { useFetch } from '../../hooks/useFetch';
 
-function MovieCard() {
+function MovieCard({ movie }) {
 
 	//const {data, isLoading, isError} = useFetch("https://santosnr6.github.io/Data/favoritemovies.json")
 

@@ -3,7 +3,7 @@ import logo from "../../assets/rmdb_logo.png";
 // import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useFetch } from "../../hooks/useFetch"
-import MovieSearchList from "../MovieSearchList/MovieSearchList";
+import SearchResultPage from "../../pages/SearchResultPage/SearchResultPage";
 
 
 
@@ -33,8 +33,7 @@ export default function Header() {
       </form>
       <p className="header__link">Favourites</p>
     </header>
-    <MovieSearchList movies={data?.Search}/>
     </>
-
+    
   );
 }
