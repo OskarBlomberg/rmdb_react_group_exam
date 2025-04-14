@@ -5,18 +5,15 @@ import { useState } from "react";
 import { useFetch } from "../../hooks/useFetch"
 import SearchResultPage from "../../pages/SearchResultPage/SearchResultPage";
 
-
-
 export default function Header() {
-  const [searchUrl, setSearchUrl] = useState(null)
-  const {data, isLoading, isError} = useFetch(searchUrl)
+  const [searchUrl, setSearchUrl] = useState(null);
+  const { data, isLoading, isError } = useFetch(searchUrl);
 
   const handleForm = (formData) => {
     const search = formData.get("searchInput");
-    const apiKey = "3b30178e&s"
-    const url = `http://www.omdbapi.com/?apikey=${apiKey}&s=${search}`
+    const apiKey = "3b30178e&s";
+    const url = `http://www.omdbapi.com/?apikey=${apiKey}&s=${search}`;
     setSearchUrl(url);
-
   };
 
   return (
@@ -34,6 +31,5 @@ export default function Header() {
       <p className="header__link">Favourites</p>
     </header>
     </>
-    
   );
 }
