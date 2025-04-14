@@ -13,6 +13,7 @@ main {
   padding: 4rem 6rem;
   width: 100vw;
   background-color: black;
+  min-height: 100vh;
 }
 
 .loadingText {
