@@ -4,6 +4,7 @@
   padding: 0.5rem 1rem 1rem;
   background-color: black;
   color: whitesmoke;
+  border-bottom: 1px solid var(--REACT-BLUE);
   display: grid;
   align-items: center;
   grid-template-columns: 1fr 1fr;
@@ -49,6 +50,8 @@
   }
 
   .header__link {
+    color: antiquewhite;
+    text-decoration: none;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     place-self: center end;
