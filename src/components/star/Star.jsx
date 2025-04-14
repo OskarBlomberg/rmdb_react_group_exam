@@ -29,6 +29,7 @@ function Star({ movie }) {
 		<span
 			onClick={handleClick}
 			title={isSaved ? 'Remove from watchlist' : 'Add to watchlist'}
+			className={`moviecard__info-star ${isSaved ? 'filled' : ''}`}
 		>
 			★
 		</span>
