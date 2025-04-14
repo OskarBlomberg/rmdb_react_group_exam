@@ -1,0 +1,55 @@
+# Mötesprotokoll (dagens datum)
+
+Sätt en timer på 15 minuter
+
+## Närvarande
+
+- Oskar
+- Leonard
+- Amanda
+- Senja
+- Axner
+
+## Protokoll
+
+Var och en svarar på frågorna nedan, 1 person antecknar
+
+- Vad gjorde du igår?
+- Vad ska du göra idag?
+- Finns det några hinder?
+
+### Leonard
+
+- Planerade
+- Movie-grid
+- Väntar in movie card
+
+### Amanda
+
+- Planerade
+- Movie card-komponent
+- Inte än
+
+### Senja
+
+- Planering. Har börjat fixa med routing
+- Fortsätter med routing
+- Behöver sidstrukturen
+
+
+### Axner
+
+- Planering. Har börjat med fetch-hook
+- Göra sökfunktion för det som ska visas i movie-grid 
+- Inte än
+
+
+### Oskar
+
+- Planering. Gjort en placholder-header och tagit fram ett utkast till useFetch
+- Implementera routingen i header
+- Huvudvärk
+
+### Övrigt
+
+Axner måste dra vid 13.
