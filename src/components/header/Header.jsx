@@ -1,14 +1,19 @@
 import "./header.css";
 import logo from "../../assets/rmdb_logo.png";
-
-
+// import { Link } from "react-router-dom";
+import { useState } from "react";
+import { useFetch } from "../../hooks/useFetch"
+import SearchResultPage from "../../pages/SearchResultPage/SearchResultPage";
 
 export default function Header() {
- 
-  
+  const [searchUrl, setSearchUrl] = useState(null);
+  const { data, isLoading, isError } = useFetch(searchUrl);
+
   const handleForm = (formData) => {
     const search = formData.get("searchInput");
-   console.log(search)
+    const apiKey = "3b30178e&s";
+    const url = `http://www.omdbapi.com/?apikey=${apiKey}&s=${search}`;
+    setSearchUrl(url);
   };
 
  
@@ -17,7 +22,6 @@ export default function Header() {
   
 
   return (
-    
     <header className="header">
       <div className="header__logo">
         <img src={logo} alt="RMDB logo" width={352} height={110} />
@@ -30,11 +34,5 @@ export default function Header() {
       </form>
       <p className="header__link">Favourites</p>
     </header>
-
-    
-
-   
- 
-   
   );
 }
