@@ -9,6 +9,7 @@ function MovieCard({ movie }) {
   }
 
   return (
+	<Link className="link" to={`/moviedetails/${movie.imdbID}`}>
     <section className="moviecard">
       <div>
         <Star movie={movie} />
@@ -26,6 +27,7 @@ function MovieCard({ movie }) {
         <h2 className="moviecard__info-title">{movie.Title}</h2>
       </div>
     </section>
+	</Link>
   );
 }
 

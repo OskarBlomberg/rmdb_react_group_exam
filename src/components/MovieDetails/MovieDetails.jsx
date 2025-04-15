@@ -19,7 +19,7 @@ function MovieDetails( {movie} ) {
             </article>
             <article className="movie__details-extra">
             <p>Runtime: {movie.Runtime}</p>
-            <p>&#11088;{movie.imdbRating} / 10</p>
+            <p>{movie.imdbRating}&#11088; / 10</p>
             </article>
             
         </section>

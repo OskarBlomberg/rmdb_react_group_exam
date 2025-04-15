@@ -13,3 +13,14 @@
     gap: 2rem;
 }
 
+
+
+
+@media (max-width: 600px) {
+    .details__page-container{
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+    
+}
+

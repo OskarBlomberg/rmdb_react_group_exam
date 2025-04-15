@@ -14,7 +14,7 @@ function MovieDetailsPage() {
   const { data: movie, isLoading, isError } = useFetch(`https://www.omdbapi.com/?apikey=${apiKey}&i=${id}`);
   
     return (
-     <section className='search'>
+     <section className="search">
         <section className="single-page">
           {isLoading && <p className="loadingText">Loading..</p>}
           {isError && <p className="loading">ops...Something went wrong...</p>}
