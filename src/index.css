@@ -30,4 +30,9 @@ main {
   transform: translate(-50%, -50%);
   font-size: clamp(2rem, 8vw, 5rem);
   text-align: center;
+  color: white;
+}
+
+.mainLoading {
+  background-color: black;
 }

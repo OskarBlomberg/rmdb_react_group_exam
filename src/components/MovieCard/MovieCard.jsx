@@ -1,19 +1,22 @@
 import './moviecard.css';
+import Star from '../star/Star';
 import { Link } from "react-router-dom"
 //import { useFetch } from '../../hooks/useFetch';
 
 function MovieCard({ movie }) {
 
-	//const {data, isLoading, isError} = useFetch("https://santosnr6.github.io/Data/favoritemovies.json")
+	if (!movie) {
+		return <p>Loading...</p>;
+	}
 
 	return (
 		<Link className="link" to={`/moviedetails/${movie.imdbID}`}>
 		<section className="moviecard">
 			<div>
-			<p className="moviecard__info-star">★</p>
+				<Star movie={movie} />
 				<img 
 					src={movie.Poster !== 'N/A' ? movie.Poster : '../../assets/missing-poster.svg'} 
-					alt="The poster for the movie. If no poster is found, a placeholder image is shown"
+					alt={`Poster for ${movie.Title}`}
 					className="moviecard__poster" 
 				/>
 			</div>
