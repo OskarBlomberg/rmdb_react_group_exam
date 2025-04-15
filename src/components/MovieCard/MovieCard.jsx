@@ -10,16 +10,15 @@ function MovieCard({ movie }) {
 	return (
 		<section className="moviecard">
 			<div>
-			<p className="moviecard__info-star">★</p>
+				<Star movie={movie} />
 				<img 
-					src={movie.Poster !== 'N/A' ? movie.Poster : '/assets/missing-poster.svg'} 
+					src={movie.Poster !== 'N/A' ? movie.Poster : '../../assets/missing-poster.svg'} 
 					alt={`Poster for ${movie.Title}`}
 					className="moviecard__poster" 
 				/>
 			</div>
 			<div className="moviecard__info">
 				<h2 className="moviecard__info-title">{movie.Title}</h2>
-				<Star movie={movie} />
 			</div>
 		</section>
 	);
