@@ -1,22 +1,32 @@
 import React from "react";
-import { useOutletContext, useSearchParams } from "react-router-dom";
+import { useOutletContext } from "react-router-dom";
 import { useFetch } from "../../hooks/useFetch";
 import MovieGrid from "../../components/MovieGrid/MovieGrid";
 
 function SearchResultPage() {
   const { searchUrl } = useOutletContext();
-  const { data: movies, loading: moviesLoading, isError } = useFetch(searchUrl);
+  const { data: movies, loading: moviesLoading } = useFetch(searchUrl);
 
-  if (moviesLoading)
+  if (moviesLoading) {
     return (
       <main className="mainLoading">
         <h1 className="loadingText">Loading...</h1>
       </main>
     );
+  }
+
+  if (!movies.Search) {
+    return (
+      <main className="mainLoading">
+        <h1 className="loadingText">No movies found</h1>
+      </main>
+    );
+  }
 
   return (
     <main className="searchresultpage">
-      {movies.Search && <MovieGrid movies={movies.Search} />}
+      <h1 className="heading">Search results</h1>
+      <MovieGrid movies={movies.Search} />
     </main>
   );
 }
