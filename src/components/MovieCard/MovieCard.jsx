@@ -8,6 +8,7 @@ function MovieCard({ movie }) {
 	return (
 		<section className="moviecard">
 			<div>
+			<p className="moviecard__info-star">★</p>
 				<img 
 					src={movie.Poster !== 'N/A' ? movie.Poster : '../../assets/missing-poster.svg'} 
 					alt="The poster for the movie. If no poster is found, a placeholder image is shown"
@@ -16,7 +17,6 @@ function MovieCard({ movie }) {
 			</div>
 			<div className="moviecard__info">
 				<h2 className="moviecard__info-title">{movie.Title}</h2>
-				<p className="moviecard__info-star">★</p>
 			</div>
 		</section>
 	);
