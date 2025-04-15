@@ -1,0 +1,51 @@
+# Mötesprotokoll (dagens datum)
+
+Sätt en timer på 15 minuter
+
+## Närvarande
+
+- Oskar
+- Leonard
+- Amanda
+- Senja
+- Axner
+
+## Protokoll
+
+Var och en svarar på frågorna nedan, 1 person antecknar
+
+- Vad gjorde du igår?
+- Vad ska du göra idag?
+- Finns det några hinder?
+
+### Leonard
+
+- Skapade MovieGrid, HomePage och stylade MoviePage och MovieCard
+- WatchListPage
+- Ifall det inte riktigt fungerar att toggla WatchList-filmer med stjärnan än
+
+### Amanda
+
+- Började med Stjärnkomponenten samt gjorde MovieCard
+- Göra klart Stjärnkomponenten. 
+- Inga problem
+
+### Senja
+
+- Satt med Oskar och fixade routing och sedan mergade grejer
+- Fixa karusellen med trailers
+- Inga problem
+
+
+### Axner
+
+- Jobbade på SearchResultPage och gjorde useFetch-hooken
+- Göra MovieDetails
+- Oskar
+
+
+### Oskar
+
+- Routing, Header samt hjälpte med useFetch-hooken
+- Göra så att sökfunktionen fungerar
+- Technical difficulties
