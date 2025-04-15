@@ -10,7 +10,12 @@ function SearchResultPage() {
     "https://santosnr6.github.io/Data/favoritemovies.json"
   );
 
-  if (moviesLoading) return <h1 className="loadingText">Loading...</h1>;
+  if (moviesLoading) 
+    return (
+    <main className='mainLoading'>
+      <h1 className="loadingText">Loading...</h1>
+    </main>
+  );
 
   return (
     <main className="searchresultpage">
