@@ -30,7 +30,7 @@ export default function Header({ searchUrl, setSearchUrl }) {
             name="searchInput"
           />
           <button type="submit" className="header__form__btn">
-            Search title
+            Search
           </button>
         </form>
         <Link to={"/watchlist"} className="header__link">
