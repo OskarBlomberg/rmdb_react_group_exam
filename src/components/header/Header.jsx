@@ -12,7 +12,7 @@ export default function Header({ searchUrl, setSearchUrl }) {
     const search = formData.get("searchInput");
     const apiKey = "3b30178e&s";
     setSearchUrl(
-      `http://www.omdbapi.com/?apikey=${apiKey}&s=${search}&type=movie`
+      `http://www.omdbapi.com/?apikey=${apiKey}&s=${search}*&type=movie`
     );
     navigate("/searchresults");
   };
