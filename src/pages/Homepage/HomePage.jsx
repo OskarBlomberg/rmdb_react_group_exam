@@ -4,7 +4,7 @@ import Carousel from "../../components/carousel/Carousel";
 
 function HomePage() {
   const { data: movies, isLoading: moviesLoading } = useFetch("https://santosnr6.github.io/Data/favoritemovies.json");
-
+  
   if (moviesLoading) {
     return (
       <main className="mainLoading">

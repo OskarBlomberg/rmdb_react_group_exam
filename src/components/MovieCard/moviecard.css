@@ -3,6 +3,11 @@
   display: flex;
   flex-direction: column;
   transition: transform 0.2s;
+    border: 2px solid rgb(169, 169, 169);
+    display: flex;
+    flex-direction: column;
+    transition: transform .2s;
+    max-width: 350px;
 }
 
 .moviecard:hover {
@@ -44,3 +49,13 @@
 .moviecard__info-star.filled {
   color: #fff700;
 }
+
+
+.moviecard__info-star:hover {
+    color: #fff700;
+}
+
+.link{
+    text-decoration: none;
+}
+
