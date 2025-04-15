@@ -1,50 +1,50 @@
 .moviecard {
-    border: 2px solid rgb(169, 169, 169);
-    display: flex;
-    flex-direction: column;
-    transition: transform .2s
+  border: 2px solid rgb(169, 169, 169);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s;
 }
 
 .moviecard:hover {
-    cursor: pointer;
-    transform: scale(1.05);
+  cursor: pointer;
+  transform: scale(1.05);
 }
 
 .moviecard__poster {
-    width: 100%;
-    aspect-ratio: 2/3;
-    object-fit: cover;
+  width: 100%;
+  aspect-ratio: 2/3;
+  object-fit: cover;
 }
 
 .moviecard__info {
-    min-height: 4rem;
-    padding: 1rem;
+  min-height: 4rem;
+  padding: 1rem;
 }
 
 .moviecard__info-title {
-	color: white;
-	font-size: 1.4rem;
+  color: var(--OFF-WHITE);
+  font-size: 1.4rem;
 }
 
 .moviecard__info-star {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    background-color: var(--REACT-BLUE);
-    border-radius: 100%;
-    margin: 0.5rem;
-    width: 3rem;
-    height: 3rem;
-    font-size: 2rem;
-    color: rgb(0, 77, 80);
-    transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: var(--REACT-BLUE);
+  border-radius: 100%;
+  margin: 0.5rem;
+  width: 3rem;
+  height: 3rem;
+  font-size: 2rem;
+  color: rgb(0, 77, 80);
+  transition: all 0.2s ease-in-out;
 }
 
 .moviecard__info-star.filled {
-    color: #fff700;
+  color: #fff700;
 }
 
 .moviecard__info-star:hover {
-    color: #fff700;
+  color: #fff700;
 }

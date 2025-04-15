@@ -5,12 +5,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
 }
 
 /* VARIABLES */
 :root {
   --REACT-BLUE: #00d8ff;
+  --OFF-WHITE: mintcream;
 }
 
 /* GENERAL */
