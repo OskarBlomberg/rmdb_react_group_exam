@@ -1,6 +1,6 @@
 import { useFetch } from "../../hooks/useFetch"
-// import Carousel from "../components/Carousel/Carousel";
 import MovieGrid from "../../components/MovieGrid/MovieGrid"
+import Carousel from "../../components/carousel/Carousel";
 
 function HomePage() {
   const { data: trailers, loading: trailersLoading } = useFetch("");
@@ -15,7 +15,7 @@ function HomePage() {
 
   return (
     <main className="homePage">
-      {/* <Carousel trailers={trailers} /> */}
+      <Carousel />
       <MovieGrid movies={movies} />
     </main>
   );
