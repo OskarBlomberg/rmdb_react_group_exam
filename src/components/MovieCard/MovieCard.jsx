@@ -10,6 +10,7 @@ function MovieCard({ movie }) {
 	return (
 		<section className="moviecard">
 			<div>
+			<p className="moviecard__info-star">★</p>
 				<img 
 					src={movie.Poster !== 'N/A' ? movie.Poster : '/assets/missing-poster.svg'} 
 					alt={`Poster for ${movie.Title}`}

@@ -1,18 +1,25 @@
 @import url("./pages/Homepage/homepage.css");
 @import url("components/MovieGrid/moviegrid.css");
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial;
 }
+
+/* VARIABLES */
+:root {
+  --REACT-BLUE: #00d8ff;
+}
+
+/* GENERAL */
 
 main {
   display: flex;
   flex-direction: column;
   padding: 4rem 6rem;
-  width: 100vw;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   min-height: 100vh;
 }
 
