@@ -1,5 +1,6 @@
 import { localStorageFetch } from "../../hooks/localStorageFetch";
 import MovieGrid from "../../components/MovieGrid/MovieGrid";
+import "./watchlistpage.css"
 
 function WatchListPage() {
   const { data: movies, loading: moviesLoading } = localStorageFetch("savedMovies");
