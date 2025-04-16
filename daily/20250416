@@ -1,0 +1,51 @@
+# Mötesprotokoll (dagens datum)
+
+Sätt en timer på 15 minuter
+
+## Närvarande
+
+- Oskar
+- Leonard
+- Amanda
+- Senja
+- Axner
+
+## Protokoll
+
+Var och en svarar på frågorna nedan, 1 person antecknar
+
+- Vad gjorde du igår?
+- Vad ska du göra idag?
+- Finns det några hinder?
+
+### Leonard
+
+- Gjorde klart WatchList-page och vissa designgrejer, så som underrubriker etc
+- Rensa lite kod, kolle igenom och hantera sådant som dyker upp
+- Nej
+
+### Amanda
+
+- Gjorde stjärnkomponenten och gjorde en error-page
+- Jobba med eventuella buggfixar, semantik och felhantering som dyker upp
+- Nej
+
+### Senja
+
+- Gjorde klart trailer-karussellen
+- Jobba med eventuella buggfixar, semantik och felhantering som dyker upp
+- Nej
+
+
+### Axner
+
+- Satt med MovieDetails och fixade denna. Såg också till att stjärnan fungerar när man klickar på kortet
+- Jobba med eventuella buggfixar, semantik och felhantering som dyker upp
+- Nej
+
+
+### Oskar
+
+- Fixade error-handling för bilderna och sökningarna ska nu fungera. Samt lite design-fix
+- Kolla lite semantik, samt hjälpa till med sådant som dyker upp
+- Nej
