@@ -9,7 +9,7 @@ function SearchResultPage() {
 
   if (moviesLoading) {
     return (
-      <main className="mainLoading">
+      <main>
         <h1 className="loadingText">Loading...</h1>
       </main>
     );
@@ -17,7 +17,7 @@ function SearchResultPage() {
 
   if (!movies.Search) {
     return (
-      <main className="mainLoading">
+      <main>
         <h1 className="loadingText">No movies found</h1>
       </main>
     );
