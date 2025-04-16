@@ -31,7 +31,7 @@ function App() {
         },
         {
           path: "*",
-          element: <NotFoundPage />
+          element: <NotFoundPage />,
         },
       ],
     },

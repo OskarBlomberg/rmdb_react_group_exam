@@ -6,14 +6,14 @@ function WatchListPage() {
 
   if (moviesLoading)
     return (
-      <main className='mainLoading'>
+      <main>
         <h1 className="loadingText">Loading...</h1>
       </main>
     );
 
   if (movies.length === 0)
     return (
-      <main className='mainLoading'>
+      <main>
         <h1 className="loadingText">Watchlist is empty</h1>
       </main>
     );
