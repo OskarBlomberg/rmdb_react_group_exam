@@ -12,6 +12,10 @@
 	color: rgb(0, 77, 80);
 	transition: all 0.2s ease-in-out;
   }
+
+  .moviecard__info-star:hover {
+	cursor: pointer;
+  }
   
   .moviecard__info-star.filled {
 	color: #fff700;
