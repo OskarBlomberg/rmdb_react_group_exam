@@ -7,7 +7,7 @@ function HomePage() {
   
   if (moviesLoading) {
     return (
-      <main className="mainLoading">
+      <main>
         <h1 className="loadingText">Loading...</h1>
       </main>
     );

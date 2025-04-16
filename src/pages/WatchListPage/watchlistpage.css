@@ -1,9 +1,0 @@
-.home--no-movies {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.home__no-movies-message {
-    color: white;
-}

@@ -1,26 +1,19 @@
-
 .search {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: black;
 }
 
-
-.details__page-container{
-    display: flex;
-    gap: 2rem;
+.details__page-container {
+  display: flex;
+  gap: 2rem;
 }
-
-
-
 
 @media (max-width: 600px) {
-    .details__page-container{
-        flex-direction: column;
-        margin-top: 3rem;
-    }
-    
+  .details__page-container {
+    flex-direction: column;
+    margin-top: 3rem;
+  }
 }
-
