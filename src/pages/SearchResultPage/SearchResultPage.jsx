@@ -5,7 +5,7 @@ import MovieGrid from "../../components/MovieGrid/MovieGrid";
 
 function SearchResultPage() {
   const { searchUrl } = useOutletContext();
-  const { data: movies, loading: moviesLoading } = useFetch(searchUrl);
+  const { data: movies, loading: moviesLoading, isError } = useFetch(searchUrl);
 
   if (moviesLoading) {
     return (
@@ -21,6 +21,10 @@ function SearchResultPage() {
         <h1 className="loadingText">No movies found</h1>
       </main>
     );
+  }
+
+  if (isError) {
+    return <p style={{ color: "mintcream" }}>Something went wrong...</p>;
   }
 
   return (
