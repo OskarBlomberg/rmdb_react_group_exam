@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import "./star.css";
 
 function Star({ movie }) {
 	const [isSaved, setIsSaved] = useState(false);

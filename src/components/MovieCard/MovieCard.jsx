@@ -2,7 +2,6 @@ import "./moviecard.css";
 import Star from "../star/Star";
 import { Link } from "react-router-dom";
 import brokenposter from "../../assets/missing-poster.svg";
-//import { useFetch } from '../../hooks/useFetch';
 
 function MovieCard({ movie, isSingle = false }) {
   if (!movie) {
