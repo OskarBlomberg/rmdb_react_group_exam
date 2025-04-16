@@ -41,30 +41,6 @@
   font-size: 1.4rem;
 }
 
-.moviecard__info-star {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  background-color: var(--REACT-BLUE);
-  border-radius: 100%;
-  margin: 0.5rem;
-  width: 3rem;
-  height: 3rem;
-  font-size: 2rem;
-  color: rgb(0, 77, 80);
-  transition: all 0.2s ease-in-out;
-}
-
-.moviecard__info-star.filled {
-  color: #fff700;
-}
-
-.moviecard__info-star:hover {
-  color: #fff700;
-    cursor: pointer;
-}
-
 .link {
   text-decoration: none;
 }
