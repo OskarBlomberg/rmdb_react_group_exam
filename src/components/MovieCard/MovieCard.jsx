@@ -3,14 +3,14 @@ import Star from "../star/Star";
 import { Link } from "react-router-dom";
 import brokenposter from "../../assets/missing-poster.svg";
 
-function MovieCard({ movie }) {
+function MovieCard({ movie, isSingle = false }) {
   if (!movie) {
     return <p>Loading...</p>;
   }
 
   return (
-    <Link className="link" to={`/moviedetails/${movie.imdbID}`}>
-      <section className="moviecard">
+    <Link className="link single-book-link" to={`/moviedetails/${movie.imdbID}`}>
+      <section className={isSingle ? "moviecard moviecard__isSingle" : "moviecard"}>
         <div>
           <Star movie={movie} />
           <img

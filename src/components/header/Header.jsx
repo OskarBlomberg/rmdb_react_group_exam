@@ -18,6 +18,11 @@ export default function Header({ setSearchUrl }) {
 
   const isValid = searchTerm.trim().length >= 3;
 
+ 
+ 
+
+  
+
   return (
     <>
       <header className="header">

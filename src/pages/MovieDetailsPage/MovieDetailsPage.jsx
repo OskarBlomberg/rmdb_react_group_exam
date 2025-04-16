@@ -16,15 +16,18 @@ function MovieDetailsPage() {
         {isLoading && <p className="loadingText">Loading..</p>}
         {isError && <p className="loading">ops...Something went wrong...</p>}
 
-        {movie && (
-          <section className="details__page-container">
-            <MovieCard movie={movie} />
-            <MovieDetails movie={movie} />
-          </section>
-        )}
-      </section>
-    </section>
-  );
+          {movie && (
+            <section className="details__page-container">
+            <MovieCard movie={movie} isSingle={true}/>
+            <MovieDetails movie={movie}/>
+            </section>
+            
+          )}
+
+        </section>
+        
+    </section> 
+    )
 }
 
 export default MovieDetailsPage;
