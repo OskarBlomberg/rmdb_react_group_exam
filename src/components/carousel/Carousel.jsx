@@ -6,12 +6,20 @@ import "swiper/css/navigation";
 import "./carousel.css";
 
 function Carousel() {
-  const { data: trailers, loading } = useFetch("https://santosnr6.github.io/Data/favoritemovies.json");
+  const {
+    data: trailers,
+    loading,
+    isError,
+  } = useFetch("https://santosnr6.github.io/Data/favoritemovies.json");
 
-  if (loading) return <h2>Laddar trailers...</h2>;
+  if (loading) return <h2>Trailers loading...</h2>;
 
   if (!trailers || trailers.length === 0) {
-    return <h2>Inga trailers hittades...</h2>;
+    return <h2 style={{ color: "mintcream" }}>No trailers found...</h2>;
+  }
+
+  if (isError) {
+    return <p style={{ color: "mintcream" }}>Something went wrong...</p>;
   }
 
   const randomTrailers = trailers.sort(() => 0.5 - Math.random()).slice(0, 5);
