@@ -53,10 +53,7 @@
 
 .moviecard__info-star.filled {
   color: #fff700;
-}
-
-.moviecard__info-star:hover {
-  color: #fff700;
+  text-shadow: 0 0 2px darkblue;
 }
 
 .link {
