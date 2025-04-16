@@ -6,7 +6,7 @@ function MovieDetails( {movie} ) {
   return (
     <section className="movie__details">
         <section>
-        <h2 className="movie__details-title">{movie.Title}</h2>
+        <h1 className="movie__details-title">{movie.Title}</h1>
         <p className="movie__details-director"><span className="movie__details__span">Driected by: </span>{movie.Director}</p>
         </section>
         <section>
