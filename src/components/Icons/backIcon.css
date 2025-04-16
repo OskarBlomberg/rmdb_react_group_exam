@@ -1,15 +1,15 @@
 .back-button {
-   color: var(--REACT-BLUE);
-   font-weight: 600;
-   padding: .7rem 1.9rem;
-   font-size: 1.3rem;
-   border: 2px solid var(--REACT-BLUE);
-   border-radius: 5px;
-   background: none;
-   cursor: pointer;
-   transition: all 250ms;
-
+  color: var(--REACT-BLUE);
+  font-weight: 600;
+  padding: 0.7rem 1.9rem;
+  font-size: 1.3rem;
+  border: 2px solid var(--REACT-BLUE);
+  border-radius: 5px;
+  background: none;
+  cursor: pointer;
+  transition: all 250ms;
 }
-.back-button:hover{
-    transform: scale(1.05);
+
+.back-button:hover {
+  transform: scale(1.05);
 }
