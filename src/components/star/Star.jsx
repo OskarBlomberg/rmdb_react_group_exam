@@ -11,10 +11,11 @@ function Star({ movie }) {
 		setIsSaved(exists);
 	}, [movie.imdbID]);
 
-	const handleClick = () => {
+	const handleClick = (e) => {
+		e.preventDefault(); 
+		e.stopPropagation();
 		// Getting list of movies from localStorage
-		const saved = JSON.parse(localStorage.getItem('savedMovies')) || [];
-
+		const saved = JSON.parse(localStorage.getItem('savedMovies')) || [];	
 		if (!isSaved) {
 			// If movie is not saved, add to list when star is clicked
 			const updated = [...saved, movie];

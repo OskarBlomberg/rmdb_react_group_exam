@@ -3,23 +3,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 80vh;
     background: black;
 }
 
 
 .details__page-container{
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
+    width: 800px;
+    margin-top: 2rem;
+   
 }
 
-
-
-
-@media (max-width: 600px) {
+@media (max-width: 850px) {
     .details__page-container{
         flex-direction: column;
         margin-top: 3rem;
+        align-items: center;
     }
     
 }

@@ -22,7 +22,7 @@ function MovieDetailsPage() {
 
           {movie && (
             <section className="details__page-container">
-            <MovieCard movie={movie}/>
+            <MovieCard movie={movie} isSingle={true}/>
             <MovieDetails movie={movie}/>
             </section>
             
