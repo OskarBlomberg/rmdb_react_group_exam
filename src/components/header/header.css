@@ -64,7 +64,7 @@
 /* MEDIA QUERIES */
 @media screen and (min-width: 1000px) {
   .header {
-    height: 5rem;
+    height: 9vh;
     display: flex;
     justify-content: space-between;
     gap: 1rem;
