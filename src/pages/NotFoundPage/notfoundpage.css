@@ -1,0 +1,94 @@
+.notfound__wrapper {
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+
+  .notfound__title {
+    color: white;
+    font-size: 4rem;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  }
+
+  p {
+    color: white;
+  }
+
+  a {
+    background-color: var(--REACT-BLUE);
+    padding: 0.8rem;
+    color: black;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+
+  a:hover {
+    transform: scale(1.1);
+    background-color: #007d7d;
+  }
+}
+
+.emoji__rain span {
+  position: absolute;
+  top: -10%;
+  font-size: 3rem;
+  animation: fall 5s linear infinite;
+}
+
+.emoji__rain span:nth-child(1) {
+  left: 10%;
+  animation-delay: 0s;
+}
+.emoji__rain span:nth-child(2) {
+  left: 20%;
+  animation-delay: 1s;
+}
+.emoji__rain span:nth-child(3) {
+  left: 30%;
+  animation-delay: 2s;
+}
+.emoji__rain span:nth-child(4) {
+  left: 40%;
+  animation-delay: 1.5s;
+}
+.emoji__rain span:nth-child(5) {
+  left: 50%;
+  animation-delay: 0.5s;
+}
+.emoji__rain span:nth-child(6) {
+  left: 60%;
+  animation-delay: 1.2s;
+}
+.emoji__rain span:nth-child(7) {
+  left: 70%;
+  animation-delay: 0.8s;
+}
+.emoji__rain span:nth-child(8) {
+  left: 80%;
+  animation-delay: 2.2s;
+}
+.emoji__rain span:nth-child(9) {
+  left: 90%;
+  animation-delay: 1.8s;
+}
+.emoji__rain span:nth-child(10) {
+  left: 25%;
+  animation-delay: 2.5s;
+}
+
+@keyframes fall {
+  0% {
+    top: -10%;
+    opacity: 0;
+    transform: rotate(0deg);
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    top: 90%;
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
