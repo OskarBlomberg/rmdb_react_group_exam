@@ -2,8 +2,11 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./components/layout/Layout";
 import HomePage from "./pages/Homepage/HomePage";
 import SearchResultPage from "./pages/SearchResultPage/SearchResultPage";
-import WatchListPage from "./pages/WatchListPage";
-import MovieDetailsPage from "./pages/MovieDetailsPage";
+
+
+import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
+import WatchListPage from "./pages/WatchListPage/WatchListPage";
+import MovieDetailsPage from "./pages/MovieDetailsPage/MovieDetailsPage";
 
 function App() {
   const router = createBrowserRouter([
@@ -26,6 +29,10 @@ function App() {
         {
           path: "/moviedetails/:id",
           element: <MovieDetailsPage />,
+        },
+        {
+          path: "*",
+          element: <NotFoundPage />
         },
       ],
     },

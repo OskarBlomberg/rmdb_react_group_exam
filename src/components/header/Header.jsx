@@ -1,20 +1,22 @@
 import "./header.css";
 import logo from "../../assets/rmdb_logo.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
-import { useFetch } from "../../hooks/useFetch";
-import SearchResultPage from "../../pages/SearchResultPage/SearchResultPage";
 
-export default function Header() {
-  const [searchUrl, setSearchUrl] = useState(null);
-  const { data, isLoading, isError } = useFetch(searchUrl);
+export default function Header({ setSearchUrl }) {
+  const navigate = useNavigate();
+  const [searchTerm, setSearchTerm] = useState("");
 
   const handleForm = (formData) => {
-    const search = formData.get("searchInput");
+    const search = formData.get("searchInput").trim();
     const apiKey = "3b30178e&s";
-    const url = `http://www.omdbapi.com/?apikey=${apiKey}&s=${search}`;
-    setSearchUrl(url);
+    setSearchUrl(
+      `http://www.omdbapi.com/?apikey=${apiKey}&s=${search}*&type=movie`
+    );
+    navigate("/searchresults");
   };
+
+  const isValid = searchTerm.trim().length >= 3;
 
  
  
@@ -30,11 +32,19 @@ export default function Header() {
         <form action={handleForm} className="header__form">
           <input
             type="text"
+            placeholder="Search by title"
+            aria-label="Search for movie by title. Use at least three characters."
             className="header__form__input"
             name="searchInput"
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
           />
-          <button type="submit" className="header__form__btn">
-            Search title
+          <button
+            type="submit"
+            className="header__form__btn"
+            disabled={!isValid}
+          >
+            Search
           </button>
         </form>
         <Link to={"/watchlist"} className="header__link">

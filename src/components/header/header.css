@@ -2,8 +2,7 @@
   position: sticky;
   height: auto;
   padding: 0.5rem 1rem 1rem;
-  background-color: black;
-  color: whitesmoke;
+  background: linear-gradient(black 95%, var(--REACT-BLUE));
   border-bottom: 1px solid var(--REACT-BLUE);
   display: grid;
   align-items: center;
@@ -31,6 +30,7 @@
     height: 2.5rem;
 
     .header__form__input {
+      background-color: var(--OFF-WHITE);
       width: 80%;
       padding-left: 1rem;
       font-size: 1.4rem;
@@ -50,7 +50,7 @@
   }
 
   .header__link {
-    color: antiquewhite;
+    color: var(--OFF-WHITE);
     text-decoration: none;
     grid-column: 2 / 3;
     grid-row: 1 / 2;

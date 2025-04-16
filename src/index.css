@@ -5,12 +5,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
 }
 
 /* VARIABLES */
 :root {
   --REACT-BLUE: #00d8ff;
+  --OFF-WHITE: mintcream;
 }
 
 /* GENERAL */
@@ -21,6 +22,7 @@ main {
   padding: 4rem 6rem;
   background-color: rgb(0, 0, 0);
   min-height: 100vh;
+  gap: 3rem;
 }
 
 .loadingText {
@@ -30,4 +32,16 @@ main {
   transform: translate(-50%, -50%);
   font-size: clamp(2rem, 8vw, 5rem);
   text-align: center;
+  color: white;
+}
+
+.mainLoading {
+  background-color: black;
+}
+
+.heading {
+  color: white;
+  text-align: center;
+  border-bottom: 1px solid var(--REACT-BLUE);
+  padding-bottom: 1rem;
 }
