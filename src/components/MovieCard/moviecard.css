@@ -3,11 +3,15 @@
   display: flex;
   flex-direction: column;
   transition: transform 0.2s;
-    border: 2px solid rgb(169, 169, 169);
-    display: flex;
-    flex-direction: column;
-    transition: transform .2s;
-    max-width: 350px;
+  border: 2px solid rgb(169, 169, 169);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s;
+  max-width: 350px;
+}
+
+.movieGrid .moviecard {
+  height: 550px;
 }
 
 .moviecard:hover {
@@ -24,6 +28,7 @@
 .moviecard__info {
   min-height: 4rem;
   padding: 1rem;
+  overflow: hidden;
 }
 
 .moviecard__info-title {
@@ -50,12 +55,10 @@
   color: #fff700;
 }
 
-
 .moviecard__info-star:hover {
-    color: #fff700;
+  color: #fff700;
 }
 
-.link{
-    text-decoration: none;
+.link {
+  text-decoration: none;
 }
-
